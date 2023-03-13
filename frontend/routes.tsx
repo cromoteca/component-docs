@@ -3,7 +3,9 @@ import MainLayout from 'Frontend/views/MainLayout.js';
 import * as React from 'react';
 import { createBrowserRouter, IndexRouteObject, NonIndexRouteObject, useMatches } from 'react-router-dom';
 import AppLayoutSimple from './views/app-layout/AppLayoutSimple.js';
+import ButtonDisabled from './views/button/ButtonDisabled.js';
 import ButtonSimple from './views/button/ButtonSimple.js';
+import ButtonStyles from './views/button/ButtonStyles.js';
 import Root from './views/root/Root.js';
 
 export type MenuProps = Readonly<{
@@ -30,15 +32,20 @@ export type ViewRouteMatch = Readonly<Override<RouteMatch, ViewMeta>>;
 
 export const useViewMatches = useMatches as () => readonly ViewRouteMatch[];
 
+const examples = [AppLayoutSimple, ButtonSimple, ButtonStyles, ButtonDisabled];
+
 export const routes: readonly ViewRouteObject[] = [
   {
     element: <MainLayout />,
     handle: { icon: 'null', title: 'Main' },
-    children: [Root, AppLayoutSimple, ButtonSimple].map(element => ({
-      path: element.name === 'Root' ? '/' : paramCase(element.name),
-      element: React.createElement(element, {}),
-      handle: { icon: 'file', title: capitalCase(element.name) },
-    })),
+    children: [
+      { path: '/', element: <Root />, handle: { icon: 'home', title: 'Home' } },
+      ...examples.map(element => ({
+        path: paramCase(element.name),
+        element: React.createElement(element, {}),
+        handle: { icon: 'dot-circle', title: capitalCase(element.name) },
+      })),
+    ]
   },
 ];
 
