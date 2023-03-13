@@ -20,6 +20,9 @@ import DatePickerSimple from './views/date-picker/DatePickerSimple.js';
 import DateTimePickerSimple from './views/date-time-picker/DateTimePickerSimple.js';
 import DateTimePickerStep from './views/date-time-picker/DateTimePickerStep.js';
 import DateTimePickerStepSecond from './views/date-time-picker/DateTimePickerStepSecond.js';
+import DetailsContent from './views/details/DetailsContent.js';
+import DetailsSimple from './views/details/DetailsSimple.js';
+import DialogSimple from './views/dialog/DialogSimple.js';
 import Root from './views/root/Root.js';
 
 export type MenuProps = Readonly<{
@@ -55,6 +58,8 @@ const examples = [
   CustomFieldSimple,
   DatePickerSimple, DatePickerNoAutoOpen, DatePickerRange,
   DateTimePickerSimple, DateTimePickerStep, DateTimePickerStepSecond,
+  DetailsSimple, DetailsContent,
+  DialogSimple,
 ];
 
 export const routes: readonly ViewRouteObject[] = [
