@@ -8,7 +8,7 @@ export default function ConfirmDialogSimple() {
     const [status, setStatus] = useState('');
 
     return (
-        <div className='flex p-l gap-m'>
+        <>
             <ConfirmDialog
                 opened={opened}
                 onOpenedChanged={({ detail: { value } }) => setOpened(value)}
@@ -29,6 +29,6 @@ export default function ConfirmDialogSimple() {
                 <Button onClick={() => setOpened(!opened)}>Show dialog</Button>
                 <span hidden={!status}>Status: {status}</span>
             </HorizontalLayout>
-        </div>
+        </>
     );
 }

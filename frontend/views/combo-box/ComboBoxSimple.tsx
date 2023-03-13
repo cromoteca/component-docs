@@ -8,13 +8,11 @@ export default function ComboBoxSimple() {
     ];
 
     return (
-        <div className='flex p-l gap-m'>
-            <ComboBox
-                label='Country'
-                itemLabelPath='name'
-                itemValuePath='id'
-                items={countries}
-            />
-        </div>
+        <ComboBox
+            label='Country'
+            itemLabelPath='name'
+            itemValuePath='id'
+            items={countries}
+        />
     );
 }

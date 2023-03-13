@@ -10,7 +10,7 @@ export default function CheckboxIndeterminate() {
     useEffect(() => setUsers(['Aria Bailey', 'Aaliyah Butler', 'Eleanor Price']), []);
 
     return (
-        <VerticalLayout theme='spacing' className='flex p-l gap-m'>
+        <VerticalLayout theme='spacing'>
             <Checkbox
                 id='notifyUsers'
                 label='Notify users'

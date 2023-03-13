@@ -7,7 +7,7 @@ export default function DatePickerRange() {
     const [returnDate, setReturnDate] = useState('');
 
     return (
-        <HorizontalLayout theme='spacing' className='flex p-l gap-m'>
+        <HorizontalLayout theme='spacing'>
             <DatePicker
                 label='Departure date'
                 onValueChanged={({ detail: { value } }) => setDepartureDate(value)}

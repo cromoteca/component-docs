@@ -65,7 +65,7 @@ export const routes: readonly ViewRouteObject[] = [
       { path: '/', element: <Root />, handle: { icon: 'home', title: 'Home' } },
       ...examples.map(element => ({
         path: paramCase(element.name),
-        element: React.createElement(element, {}),
+        element: <div className='flex p-l gap-m'>{React.createElement(element, {})}</div>,
         handle: { icon: 'dot-circle', title: capitalCase(element.name) },
       })),
     ]

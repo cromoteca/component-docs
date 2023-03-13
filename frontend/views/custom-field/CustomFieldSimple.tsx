@@ -3,12 +3,10 @@ import { DatePicker } from "@hilla/react-components/DatePicker.js";
 
 export default function CustomFieldSimple() {
     return (
-        <div className='flex p-l gap-m'>
-            <CustomField label='Enrollment period'>
-                <DatePicker id='start' placeholder='Start date' />
-                &ndash;
-                <DatePicker id='end' placeholder='End date' />
-            </CustomField>
-        </div>
+        <CustomField label='Enrollment period'>
+            <DatePicker id='start' placeholder='Start date' />
+            &ndash;
+            <DatePicker id='end' placeholder='End date' />
+        </CustomField>
     );
 }

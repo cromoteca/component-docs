@@ -8,14 +8,12 @@ export default function ComboBoxCustomValue() {
     ];
 
     return (
-        <div className='flex p-l gap-m'>
-            <ComboBox
-                allowCustomValue
-                label='Country'
-                itemLabelPath='name'
-                itemValuePath='id'
-                items={countries}
-            />
-        </div>
+        <ComboBox
+            allowCustomValue
+            label='Country'
+            itemLabelPath='name'
+            itemValuePath='id'
+            items={countries}
+        />
     );
 }
