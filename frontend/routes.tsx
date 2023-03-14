@@ -23,6 +23,16 @@ import DateTimePickerStepSecond from './views/date-time-picker/DateTimePickerSte
 import DetailsContent from './views/details/DetailsContent.js';
 import DetailsSimple from './views/details/DetailsSimple.js';
 import DialogSimple from './views/dialog/DialogSimple.js';
+import EmailPattern from './views/email/EmailPattern.js';
+import EmailSimple from './views/email/EmailSimple.js';
+import FormLayoutLabelPosition from './views/form-layout/FormLayoutLabelPosition.js';
+import FormLayoutSimple from './views/form-layout/FormLayoutSimple.js';
+import GridFiltering from './views/grid/GridFiltering.js';
+import GridMultipleSelection from './views/grid/GridMultipleSelection.js';
+import GridRenderers from './views/grid/GridRenderers.js';
+import GridSimple from './views/grid/GridSimple.js';
+import GridSingleSelection from './views/grid/GridSingleSelection.js';
+import GridSorting from './views/grid/GridSorting.js';
 
 export type MenuProps = Readonly<{
   icon?: string;
@@ -59,6 +69,9 @@ const examples = [
   DateTimePickerSimple, DateTimePickerStep, DateTimePickerStepSecond,
   DetailsSimple, DetailsContent,
   DialogSimple,
+  EmailSimple, EmailPattern,
+  FormLayoutSimple, FormLayoutLabelPosition,
+  GridSimple, GridSingleSelection, GridMultipleSelection, GridSorting, GridFiltering, GridRenderers,
 ];
 
 export const routes: readonly ViewRouteObject[] = [
