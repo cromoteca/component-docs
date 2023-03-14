@@ -33,6 +33,30 @@ import GridRenderers from './views/grid/GridRenderers.js';
 import GridSimple from './views/grid/GridSimple.js';
 import GridSingleSelection from './views/grid/GridSingleSelection.js';
 import GridSorting from './views/grid/GridSorting.js';
+import HorizontalLayoutSimple from './views/horizontal-layout/HorizontalLayoutSimple.js';
+import InputFieldHelper from './views/input-fields/InputFieldHelper.js';
+import InputFieldLabel from './views/input-fields/InputFieldLabel.js';
+import InputFieldNonEditable from './views/input-fields/InputFieldNonEditable.js';
+import InputFieldRequired from './views/input-fields/InputFieldRequired.js';
+import IntegerFieldSimple from './views/integer-field/IntegerFieldSimple.js';
+import NumberFieldSimple from './views/number-field/NumberFieldSimple.js';
+import NumberFieldStep from './views/number-field/NumberFieldStep.js';
+import NumberFieldStepper from './views/number-field/NumberFieldStepper.js';
+import PasswordFieldReveal from './views/password-field/PasswordFieldReveal.js';
+import PasswordFieldSimple from './views/password-field/PasswordFieldSimple.js';
+import RadioButtonDisabled from './views/radio-button/RadioButtonDisabled.js';
+import RadioButtonOrientationHorizontal from './views/radio-button/RadioButtonOrientationHorizontal.js';
+import RadioButtonOrientationVertical from './views/radio-button/RadioButtonOrientationVertical.js';
+import RadioButtonOrientation from './views/radio-button/RadioButtonOrientationVertical.js';
+import RadioButtonReadOnly from './views/radio-button/RadioButtonReadOnly.js';
+import RadioButtonSimple from './views/radio-button/RadioButtonSimple.js';
+import ScrollerSimple from './views/scroller/ScrollerSimple.js';
+import SelectDisabledItems from './views/select/SelectDisabledItems.js';
+import SelectDividers from './views/select/SelectDividers.js';
+import SelectPlaceholder from './views/select/SelectPlaceholder.js';
+import SelectSimple from './views/select/SelectSimple.js';
+import SplitLayoutOrientation from './views/split-layout/SplitLayoutOrientation.js';
+import SplitLayoutSimple from './views/split-layout/SplitLayoutSimple.js';
 
 export type MenuProps = Readonly<{
   icon?: string;
@@ -72,6 +96,15 @@ const examples = [
   EmailSimple, EmailPattern,
   FormLayoutSimple, FormLayoutLabelPosition,
   GridSimple, GridSingleSelection, GridMultipleSelection, GridSorting, GridFiltering, GridRenderers,
+  HorizontalLayoutSimple,
+  InputFieldLabel, InputFieldHelper, InputFieldRequired, InputFieldNonEditable,
+  IntegerFieldSimple,
+  NumberFieldSimple, NumberFieldStepper, NumberFieldStep,
+  PasswordFieldSimple, PasswordFieldReveal,
+  RadioButtonSimple, RadioButtonReadOnly, RadioButtonDisabled, RadioButtonOrientationVertical, RadioButtonOrientationHorizontal,
+  ScrollerSimple,
+  SelectSimple, SelectDividers, SelectDisabledItems, SelectPlaceholder,
+  SplitLayoutSimple, SplitLayoutOrientation,
 ];
 
 export const routes: readonly ViewRouteObject[] = [
