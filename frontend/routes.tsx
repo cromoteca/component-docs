@@ -23,7 +23,6 @@ import DateTimePickerStepSecond from './views/date-time-picker/DateTimePickerSte
 import DetailsContent from './views/details/DetailsContent.js';
 import DetailsSimple from './views/details/DetailsSimple.js';
 import DialogSimple from './views/dialog/DialogSimple.js';
-import Root from './views/root/Root.js';
 
 export type MenuProps = Readonly<{
   icon?: string;
@@ -67,7 +66,13 @@ export const routes: readonly ViewRouteObject[] = [
     element: <MainLayout />,
     handle: { icon: 'null', title: 'Main' },
     children: [
-      { path: '/', element: <Root />, handle: { icon: 'home', title: 'Home' } },
+      {
+        path: '/',
+        element: <div className='flex p-l gap-m'>
+          Select the example in the navigation menu
+        </div>,
+        handle: { icon: 'home', title: 'Home' }
+      },
       ...examples.map(element => ({
         path: paramCase(element.name),
         element: <div className='flex p-l gap-m'>{React.createElement(element, {})}</div>,
