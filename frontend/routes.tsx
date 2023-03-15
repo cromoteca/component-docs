@@ -59,6 +59,7 @@ import SplitLayoutSimple from './views/split-layout/SplitLayoutSimple.js';
 import TabsOrientation from './views/tabs/TabsOrientation.js';
 import TabsSimple from './views/tabs/TabsSimple.js';
 import TabsStates from './views/tabs/TabsStates.js';
+import TextAreaSimple from './views/text-area/TextAreaSimple.js';
 import TextFieldAlignment from './views/text-field/TextFieldAlignment.js';
 import TextFieldClearButton from './views/text-field/TextFieldClearButton.js';
 import TextFieldPlaceholder from './views/text-field/TextFieldPlaceholder.js';
@@ -117,7 +118,7 @@ const examples = [
   SelectSimple, SelectDividers, SelectDisabledItems, SelectPlaceholder,
   SplitLayoutSimple, SplitLayoutOrientation,
   TabsSimple, TabsStates, TabsOrientation,
-  TabsSimple,
+  TextAreaSimple,
   TextFieldSimple, TextFieldPlaceholder, TextFieldClearButton, TextFieldAlignment,
   TimePickerSimple, TimePickerStep, TimePickerStepSecond,
   VerticalLayoutSimple,
