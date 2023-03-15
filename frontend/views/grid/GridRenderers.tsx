@@ -4,18 +4,20 @@ import { GridColumn } from "@hilla/react-components/GridColumn.js";
 import { useFruits } from "./Fruits.js";
 
 export default function GridRenderers() {
-    const { fruits } = useFruits();
+  const { fruits } = useFruits();
 
-    return (
-        <Grid items={fruits}>
-            <GridColumn
-                header='Item Name'
-                renderer={({ item }) => <Button>{item.name.toUpperCase()}</Button>}
-            />
-            <GridColumn
-                header='#'
-                renderer={({ item }) => <span>{item.symbol.repeat(item.quantity)}</span>}
-            />
-        </Grid>
-    );
+  return (
+    <Grid items={fruits}>
+      <GridColumn
+        header="Item Name"
+        renderer={({ item }) => <Button>{item.name.toUpperCase()}</Button>}
+      />
+      <GridColumn
+        header="#"
+        renderer={({ item }) => (
+          <span>{item.symbol.repeat(item.quantity)}</span>
+        )}
+      />
+    </Grid>
+  );
 }

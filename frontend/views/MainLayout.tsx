@@ -1,12 +1,17 @@
-import { AppLayout } from '@hilla/react-components/AppLayout.js';
-import { DrawerToggle } from '@hilla/react-components/DrawerToggle.js';
-import { Item } from '@hilla/react-components/Item.js';
-import { Scroller } from '@hilla/react-components/Scroller.js';
-import Placeholder from 'Frontend/components/placeholder/Placeholder.js';
-import { MenuProps, routes, useViewMatches, ViewRouteObject } from 'Frontend/routes.js';
-import { Suspense } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
-import css from './MainLayout.module.css';
+import { AppLayout } from "@hilla/react-components/AppLayout.js";
+import { DrawerToggle } from "@hilla/react-components/DrawerToggle.js";
+import { Item } from "@hilla/react-components/Item.js";
+import { Scroller } from "@hilla/react-components/Scroller.js";
+import Placeholder from "Frontend/components/placeholder/Placeholder.js";
+import {
+  MenuProps,
+  routes,
+  useViewMatches,
+  ViewRouteObject,
+} from "Frontend/routes.js";
+import { Suspense } from "react";
+import { NavLink, Outlet } from "react-router-dom";
+import css from "./MainLayout.module.css";
 
 type MenuRoute = ViewRouteObject &
   Readonly<{
@@ -17,10 +22,11 @@ type MenuRoute = ViewRouteObject &
 export default function MenuOnLeftLayout() {
   const matches = useViewMatches();
 
-  const currentTitle = matches[matches.length - 1]?.handle?.title ?? 'Unknown';
+  const currentTitle = matches[matches.length - 1]?.handle?.title ?? "Unknown";
 
   const menuRoutes = (routes[0]?.children || []).filter(
-    (route) => route.path && route.handle && route.handle.icon && route.handle.title
+    (route) =>
+      route.path && route.handle && route.handle.icon && route.handle.title
   ) as readonly MenuRoute[];
 
   return (
@@ -32,7 +38,9 @@ export default function MenuOnLeftLayout() {
         <nav>
           {menuRoutes.map(({ path, handle: { icon, title } }) => (
             <NavLink
-              className={({ isActive }) => `${css.navlink} ${isActive ? css.navlink_active : ''}`}
+              className={({ isActive }) =>
+                `${css.navlink} ${isActive ? css.navlink_active : ""}`
+              }
               key={path}
               to={path}
             >
@@ -40,7 +48,11 @@ export default function MenuOnLeftLayout() {
                 <Item key={path} selected={isActive}>
                   <span
                     className={css.navicon}
-                    style={{ '--mask-image': `url('line-awesome/svg/${icon}.svg')` } as any}
+                    style={
+                      {
+                        "--mask-image": `url('line-awesome/svg/${icon}.svg')`,
+                      } as any
+                    }
                     aria-hidden="true"
                   ></span>
                   {title}

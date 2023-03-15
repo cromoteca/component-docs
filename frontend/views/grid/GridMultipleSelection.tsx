@@ -4,17 +4,19 @@ import { GridSelectionColumn } from "@hilla/react-components/GridSelectionColumn
 import { useFruits } from "./Fruits.js";
 
 export default function GridMultipleSelection() {
-    const { fruits, selectedFruits, setSelectedFruits } = useFruits();
+  const { fruits, selectedFruits, setSelectedFruits } = useFruits();
 
-    return (
-        <Grid
-            items={fruits}
-            selectedItems={selectedFruits}
-            onSelectedItemsChanged={({ detail: { value } }) => setSelectedFruits(value)}
-        >
-            <GridSelectionColumn />
-            <GridColumn path='name' />
-            <GridColumn path='quantity' />
-        </Grid>
-    );
+  return (
+    <Grid
+      items={fruits}
+      selectedItems={selectedFruits}
+      onSelectedItemsChanged={({ detail: { value } }) =>
+        setSelectedFruits(value)
+      }
+    >
+      <GridSelectionColumn />
+      <GridColumn path="name" />
+      <GridColumn path="quantity" />
+    </Grid>
+  );
 }

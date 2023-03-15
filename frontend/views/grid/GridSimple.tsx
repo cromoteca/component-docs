@@ -3,12 +3,12 @@ import { GridColumn } from "@hilla/react-components/GridColumn.js";
 import { useFruits } from "./Fruits.js";
 
 export default function GridSimple() {
-    const { fruits } = useFruits();
+  const { fruits } = useFruits();
 
-    return (
-        <Grid items={fruits}>
-            <GridColumn path='name' />
-            <GridColumn path='quantity' />
-        </Grid>
-    );
+  return (
+    <Grid items={fruits}>
+      <GridColumn path="name" />
+      <GridColumn path="quantity" />
+    </Grid>
+  );
 }

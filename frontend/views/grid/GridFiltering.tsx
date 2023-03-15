@@ -3,12 +3,12 @@ import { GridFilterColumn } from "@hilla/react-components/GridFilterColumn.js";
 import { useFruits } from "./Fruits.js";
 
 export default function GridFiltering() {
-    const { fruits } = useFruits();
+  const { fruits } = useFruits();
 
-    return (
-        <Grid items={fruits}>
-            <GridFilterColumn path='name' />
-            <GridFilterColumn path='quantity' />
-        </Grid>
-    );
+  return (
+    <Grid items={fruits}>
+      <GridFilterColumn path="name" />
+      <GridFilterColumn path="quantity" />
+    </Grid>
+  );
 }
