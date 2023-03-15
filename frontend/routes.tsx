@@ -11,6 +11,7 @@ import AppLayoutSimple from "./views/app-layout/AppLayoutSimple.js";
 import ButtonDisabled from "./views/button/ButtonDisabled.js";
 import ButtonSimple from "./views/button/ButtonSimple.js";
 import ButtonStyles from "./views/button/ButtonStyles.js";
+import ChartSimple from "./views/chart/ChartSimple.js";
 import CheckboxDisabled from "./views/checkbox/CheckboxDisabled.js";
 import CheckboxGroupSimple from "./views/checkbox/CheckboxGroupSimple.js";
 import CheckboxIndeterminate from "./views/checkbox/CheckboxIndeterminate.js";
@@ -54,6 +55,7 @@ import RadioButtonOrientationHorizontal from "./views/radio-button/RadioButtonOr
 import RadioButtonOrientationVertical from "./views/radio-button/RadioButtonOrientationVertical.js";
 import RadioButtonReadOnly from "./views/radio-button/RadioButtonReadOnly.js";
 import RadioButtonSimple from "./views/radio-button/RadioButtonSimple.js";
+import RichTextEditorSimple from "./views/rich-text-editor/RichTextEditorSimple.js";
 import ScrollerSimple from "./views/scroller/ScrollerSimple.js";
 import SelectDisabledItems from "./views/select/SelectDisabledItems.js";
 import SelectDividers from "./views/select/SelectDividers.js";
@@ -102,6 +104,7 @@ export const useViewMatches = useMatches as () => readonly ViewRouteMatch[];
 const examples = [
   [AppLayoutSimple],
   [ButtonSimple, ButtonStyles, ButtonDisabled],
+  [ChartSimple],
   [
     CheckboxSimple,
     CheckboxGroupSimple,
@@ -143,6 +146,7 @@ const examples = [
     RadioButtonOrientationVertical,
     RadioButtonOrientationHorizontal,
   ],
+  [RichTextEditorSimple],
   [ScrollerSimple],
   [SelectSimple, SelectDividers, SelectDisabledItems, SelectPlaceholder],
   [SplitLayoutSimple, SplitLayoutOrientation],
