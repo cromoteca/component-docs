@@ -55,6 +55,10 @@ import RadioButtonOrientationHorizontal from "./views/radio-button/RadioButtonOr
 import RadioButtonOrientationVertical from "./views/radio-button/RadioButtonOrientationVertical.js";
 import RadioButtonReadOnly from "./views/radio-button/RadioButtonReadOnly.js";
 import RadioButtonSimple from "./views/radio-button/RadioButtonSimple.js";
+import RichTextEditorAutoHeight from "./views/rich-text-editor/RichTextEditorAutoHeight.js";
+import RichTextEditorCompact from "./views/rich-text-editor/RichTextEditorCompact.js";
+import RichTextEditorNoBorder from "./views/rich-text-editor/RichTextEditorNoBorder.js";
+import RichTextEditorReadOnly from "./views/rich-text-editor/RichTextEditorReadOnly.js";
 import RichTextEditorSimple from "./views/rich-text-editor/RichTextEditorSimple.js";
 import ScrollerSimple from "./views/scroller/ScrollerSimple.js";
 import SelectDisabledItems from "./views/select/SelectDisabledItems.js";
@@ -146,7 +150,13 @@ const examples = [
     RadioButtonOrientationVertical,
     RadioButtonOrientationHorizontal,
   ],
-  [RichTextEditorSimple],
+  [
+    RichTextEditorSimple,
+    RichTextEditorReadOnly,
+    RichTextEditorAutoHeight,
+    RichTextEditorCompact,
+    RichTextEditorNoBorder,
+  ],
   [ScrollerSimple],
   [SelectSimple, SelectDividers, SelectDisabledItems, SelectPlaceholder],
   [SplitLayoutSimple, SplitLayoutOrientation],
