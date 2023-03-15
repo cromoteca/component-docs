@@ -5,7 +5,7 @@ export default function SelectDisabledItems() {
     const [sizes, setSizes] = useState<SelectItem[]>();
 
     useEffect(() => setSizes([
-        { label: 'XS', value: 'xs' },
+        { label: 'XS (out of stock)', value: 'xs', disabled: true, },
         { label: 'S', value: 's' },
         { label: 'M', value: 'm' },
         { label: 'L', value: 'l' },
