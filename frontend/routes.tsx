@@ -47,7 +47,6 @@ import PasswordFieldSimple from './views/password-field/PasswordFieldSimple.js';
 import RadioButtonDisabled from './views/radio-button/RadioButtonDisabled.js';
 import RadioButtonOrientationHorizontal from './views/radio-button/RadioButtonOrientationHorizontal.js';
 import RadioButtonOrientationVertical from './views/radio-button/RadioButtonOrientationVertical.js';
-import RadioButtonOrientation from './views/radio-button/RadioButtonOrientationVertical.js';
 import RadioButtonReadOnly from './views/radio-button/RadioButtonReadOnly.js';
 import RadioButtonSimple from './views/radio-button/RadioButtonSimple.js';
 import ScrollerSimple from './views/scroller/ScrollerSimple.js';
@@ -57,6 +56,18 @@ import SelectPlaceholder from './views/select/SelectPlaceholder.js';
 import SelectSimple from './views/select/SelectSimple.js';
 import SplitLayoutOrientation from './views/split-layout/SplitLayoutOrientation.js';
 import SplitLayoutSimple from './views/split-layout/SplitLayoutSimple.js';
+import TabsOrientation from './views/tabs/TabsOrientation.js';
+import TabsSimple from './views/tabs/TabsSimple.js';
+import TabsStates from './views/tabs/TabsStates.js';
+import TextFieldAlignment from './views/text-field/TextFieldAlignment.js';
+import TextFieldClearButton from './views/text-field/TextFieldClearButton.js';
+import TextFieldPlaceholder from './views/text-field/TextFieldPlaceholder.js';
+import TextFieldSimple from './views/text-field/TextFieldSimple.js';
+import TimePickerSimple from './views/time-picker/TimePickerSimple.js';
+import TimePickerStep from './views/time-picker/TimePickerStep.js';
+import TimePickerStepSecond from './views/time-picker/TimePickerStepSecond.js';
+import VerticalLayoutSimple from './views/vertical-layout/VerticalLayoutSimple.js';
+import VirtualListSimple from './views/virtual-list/VirtualListSimple.js';
 
 export type MenuProps = Readonly<{
   icon?: string;
@@ -105,6 +116,12 @@ const examples = [
   ScrollerSimple,
   SelectSimple, SelectDividers, SelectDisabledItems, SelectPlaceholder,
   SplitLayoutSimple, SplitLayoutOrientation,
+  TabsSimple, TabsStates, TabsOrientation,
+  TabsSimple,
+  TextFieldSimple, TextFieldPlaceholder, TextFieldClearButton, TextFieldAlignment,
+  TimePickerSimple, TimePickerStep, TimePickerStepSecond,
+  VerticalLayoutSimple,
+  VirtualListSimple,
 ];
 
 export const routes: readonly ViewRouteObject[] = [
