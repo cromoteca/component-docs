@@ -44,6 +44,7 @@
     "async": "3.2.2",
     "glob": "7.2.3",
     "mkdirp": "1.0.4",
+    "prettier": "^2.8.4",
     "rollup-plugin-brotli": "3.1.0",
     "strip-css-comments": "5.0.0",
     "transform-ast": "2.4.4",
@@ -129,6 +130,9 @@
       "workbox-core": "6.5.4",
       "workbox-precaching": "6.5.4"
     },
-    "hash": "ce78f1e848a2e07eb6224bc69da11a88a3422fe9549204eefb8afee4a8c71348"
+    "hash": "7ed6a5c97be856569015699db14270f5a07fb3d86d5d19603c17c8b15d23447d"
+  },
+  "scripts": {
+    "pretty": "prettier --write \"./frontend/**/*.{js,jsx,ts,tsx,json}\""
   }
 }
