@@ -1,7 +1,7 @@
 import { Button } from "@hilla/react-components/Button.js";
 import { Grid } from "@hilla/react-components/Grid.js";
 import { GridColumn } from "@hilla/react-components/GridColumn.js";
-import { useFruits } from "./Fruits.js";
+import useFruits from "./Fruits.js";
 
 export default function GridRenderers() {
   const { fruits } = useFruits();

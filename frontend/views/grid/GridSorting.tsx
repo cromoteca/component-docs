@@ -1,6 +1,6 @@
 import { Grid } from "@hilla/react-components/Grid.js";
 import { GridSortColumn } from "@hilla/react-components/GridSortColumn.js";
-import { useFruits } from "./Fruits.js";
+import useFruits from "./Fruits.js";
 
 export default function GridSorting() {
   const { fruits } = useFruits();

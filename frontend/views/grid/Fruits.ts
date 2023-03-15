@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-export type Fruit = { name: string; quantity: number; symbol: string };
+type Fruit = { name: string; quantity: number; symbol: string };
 
-export function useFruits() {
+export default function useFruits() {
   const fruits = [
     { name: "apples", quantity: 5, symbol: "🍎" },
     { name: "oranges", quantity: 3, symbol: "🍊" },
