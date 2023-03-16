@@ -11,6 +11,10 @@ import AppLayoutSimple from "./views/app-layout/AppLayoutSimple.js";
 import ButtonDisabled from "./views/button/ButtonDisabled.js";
 import ButtonSimple from "./views/button/ButtonSimple.js";
 import ButtonStyles from "./views/button/ButtonStyles.js";
+import ChartArea from "./views/chart/ChartArea.js";
+import ChartColumn from "./views/chart/ChartColumn.js";
+import ChartPie from "./views/chart/ChartPie.js";
+import ChartPolar from "./views/chart/ChartPolar.js";
 import ChartSimple from "./views/chart/ChartSimple.js";
 import CheckboxDisabled from "./views/checkbox/CheckboxDisabled.js";
 import CheckboxGroupSimple from "./views/checkbox/CheckboxGroupSimple.js";
@@ -108,7 +112,7 @@ export const useViewMatches = useMatches as () => readonly ViewRouteMatch[];
 const examples = [
   [AppLayoutSimple],
   [ButtonSimple, ButtonStyles, ButtonDisabled],
-  [ChartSimple],
+  [ChartSimple, ChartColumn, ChartArea, ChartPie, ChartPolar],
   [
     CheckboxSimple,
     CheckboxGroupSimple,
