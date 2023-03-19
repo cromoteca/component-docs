@@ -175,12 +175,14 @@ const examples = [
   [TimePickerSimple, TimePickerStep, TimePickerStepSecond],
   [VerticalLayoutSimple],
   [VirtualListSimple],
-].map((group, index) => {
-  return group.map((element) => ({
-    element,
-    icon: index % 2 ? "dot-circle" : "circle",
-  }));
-});
+]
+  .map((group, index) => {
+    return group.map((element) => ({
+      element,
+      icon: index % 2 ? "dot-circle" : "circle",
+    }));
+  })
+  .flat();
 
 export const routes: readonly ViewRouteObject[] = [
   {
@@ -191,12 +193,13 @@ export const routes: readonly ViewRouteObject[] = [
         path: "/",
         element: (
           <div className="flex p-l gap-m">
-            Select the example in the navigation menu
+            Select the example in the navigation menu. When opening the App
+            Layout example, use the Back button to return to the menu.
           </div>
         ),
         handle: { icon: "home", title: "Home" },
       },
-      ...examples.flat().map(({ element, icon }) => ({
+      ...examples.map(({ element, icon }) => ({
         path: paramCase(element.name),
         element: (
           <div className="flex p-l gap-m">
