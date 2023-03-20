@@ -84,6 +84,7 @@ import TextFieldSimple from "./views/text-field/TextFieldSimple.js";
 import TimePickerSimple from "./views/time-picker/TimePickerSimple.js";
 import TimePickerStep from "./views/time-picker/TimePickerStep.js";
 import TimePickerStepSecond from "./views/time-picker/TimePickerStepSecond.js";
+import UploadSimple from "./views/upload/UploadSimple.js";
 import VerticalLayoutSimple from "./views/vertical-layout/VerticalLayoutSimple.js";
 import VirtualListSimple from "./views/virtual-list/VirtualListSimple.js";
 
@@ -176,6 +177,7 @@ const examples = [
     TextFieldAlignment,
   ],
   [TimePickerSimple, TimePickerStep, TimePickerStepSecond],
+  [UploadSimple],
   [VerticalLayoutSimple],
   [VirtualListSimple],
 ]
