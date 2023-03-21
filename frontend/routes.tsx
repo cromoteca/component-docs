@@ -84,6 +84,9 @@ import TextFieldSimple from "./views/text-field/TextFieldSimple.js";
 import TimePickerSimple from "./views/time-picker/TimePickerSimple.js";
 import TimePickerStep from "./views/time-picker/TimePickerStep.js";
 import TimePickerStepSecond from "./views/time-picker/TimePickerStepSecond.js";
+import TooltipOnElement from "./views/tooltip/TooltipOnElement.js";
+import TooltipPosition from "./views/tooltip/TooltipPosition.js";
+import TooltipSimple from "./views/tooltip/TooltipSimple.js";
 import UploadSimple from "./views/upload/UploadSimple.js";
 import VerticalLayoutSimple from "./views/vertical-layout/VerticalLayoutSimple.js";
 import VirtualListSimple from "./views/virtual-list/VirtualListSimple.js";
@@ -177,6 +180,7 @@ const examples = [
     TextFieldAlignment,
   ],
   [TimePickerSimple, TimePickerStep, TimePickerStepSecond],
+  [TooltipSimple, TooltipOnElement, TooltipPosition],
   [UploadSimple],
   [VerticalLayoutSimple],
   [VirtualListSimple],
