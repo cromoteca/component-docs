@@ -49,6 +49,9 @@ import InputFieldLabel from "./views/input-fields/InputFieldLabel.js";
 import InputFieldNonEditable from "./views/input-fields/InputFieldNonEditable.js";
 import InputFieldRequired from "./views/input-fields/InputFieldRequired.js";
 import IntegerFieldSimple from "./views/integer-field/IntegerFieldSimple.js";
+import MenuBarCheckable from "./views/menu-bar/MenuBarCheckable.js";
+import MenuBarOverflow from "./views/menu-bar/MenuBarOverflow.js";
+import MenuBarSimple from "./views/menu-bar/MenuBarSimple.js";
 import NotificationSimple from "./views/notification/NotificationSimple.js";
 import NotificationThemes from "./views/notification/NotificationThemes.js";
 import NumberFieldSimple from "./views/number-field/NumberFieldSimple.js";
@@ -151,6 +154,7 @@ const examples = [
     InputFieldNonEditable,
   ],
   [IntegerFieldSimple],
+  [MenuBarSimple, MenuBarOverflow, MenuBarCheckable],
   [NotificationSimple, NotificationThemes],
   [NumberFieldSimple, NumberFieldStepper, NumberFieldStep],
   [PasswordFieldSimple, PasswordFieldReveal],
