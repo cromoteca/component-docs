@@ -37,6 +37,12 @@ import EmailPattern from "./views/email/EmailPattern.js";
 import EmailSimple from "./views/email/EmailSimple.js";
 import FormLayoutLabelPosition from "./views/form-layout/FormLayoutLabelPosition.js";
 import FormLayoutSimple from "./views/form-layout/FormLayoutSimple.js";
+import GridProEditableColumn from "./views/grid-pro/GridProEditableColumn.js";
+import GridProEditOnClick from "./views/grid-pro/GridProEditOnClick.js";
+import GridProEditors from "./views/grid-pro/GridProEditors.js";
+import GridProEnterNextRow from "./views/grid-pro/GridProEnterNextRow.js";
+import GridProSimple from "./views/grid-pro/GridProSimple.js";
+import GridProSingleCellEdit from "./views/grid-pro/GridProSingleCellEdit.js";
 import GridFiltering from "./views/grid/GridFiltering.js";
 import GridMultipleSelection from "./views/grid/GridMultipleSelection.js";
 import GridRenderers from "./views/grid/GridRenderers.js";
@@ -145,6 +151,14 @@ const examples = [
     GridSorting,
     GridFiltering,
     GridRenderers,
+  ],
+  [
+    GridProSimple,
+    GridProEditOnClick,
+    GridProSingleCellEdit,
+    GridProEnterNextRow,
+    GridProEditableColumn,
+    GridProEditors,
   ],
   [HorizontalLayoutSimple],
   [

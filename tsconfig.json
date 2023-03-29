@@ -12,6 +12,7 @@
     "module": "esNext",
     "target": "es2020",
     "moduleResolution": "nodeNext",
+    "resolveJsonModule": true,
     "strict": true,
     "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,

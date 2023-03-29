@@ -29,6 +29,7 @@
     "change-case": "^4.1.2",
     "classnames": "^2.3.2",
     "construct-style-sheets-polyfill": "3.1.0",
+    "date-fns": "^2.29.3",
     "lit": "2.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -85,7 +86,8 @@
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
     "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
     "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
-    "change-case": "$change-case"
+    "change-case": "$change-case",
+    "date-fns": "$date-fns"
   },
   "vaadin": {
     "dependencies": {
@@ -130,7 +132,7 @@
       "workbox-core": "6.5.4",
       "workbox-precaching": "6.5.4"
     },
-    "hash": "a6eab3dd702d567b80d0d42c7b5321ff7e6acea43dd9bf9371bea052ca3529f5"
+    "hash": "6284a9bb6b549003a569c1f73f5aaa1e51a0e27511e9e56a34843b74f086c261"
   },
   "scripts": {
     "pretty": "prettier --write \"./frontend/**/*.{js,jsx,ts,tsx,json}\""

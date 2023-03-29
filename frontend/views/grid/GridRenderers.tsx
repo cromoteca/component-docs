@@ -8,16 +8,12 @@ export default function GridRenderers() {
 
   return (
     <Grid items={fruits}>
-      <GridColumn
-        header="Item Name"
-        renderer={({ item }) => <Button>{item.name.toUpperCase()}</Button>}
-      />
-      <GridColumn
-        header="#"
-        renderer={({ item }) => (
-          <span>{item.symbol.repeat(item.quantity)}</span>
-        )}
-      />
+      <GridColumn header="Item Name">
+        {({ item }) => <Button>{item.name.toUpperCase()}</Button>}
+      </GridColumn>
+      <GridColumn header="#">
+        {({ item }) => <span>{item.symbol.repeat(item.quantity)}</span>}
+      </GridColumn>
     </Grid>
   );
 }
