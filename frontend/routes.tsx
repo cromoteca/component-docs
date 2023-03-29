@@ -41,6 +41,7 @@ import GridProEditableColumn from "./views/grid-pro/GridProEditableColumn.js";
 import GridProEditOnClick from "./views/grid-pro/GridProEditOnClick.js";
 import GridProEditors from "./views/grid-pro/GridProEditors.js";
 import GridProEnterNextRow from "./views/grid-pro/GridProEnterNextRow.js";
+import GridProPreventSave from "./views/grid-pro/GridProPreventSave.js";
 import GridProSimple from "./views/grid-pro/GridProSimple.js";
 import GridProSingleCellEdit from "./views/grid-pro/GridProSingleCellEdit.js";
 import GridFiltering from "./views/grid/GridFiltering.js";
@@ -159,6 +160,7 @@ const examples = [
     GridProEnterNextRow,
     GridProEditableColumn,
     GridProEditors,
+    GridProPreventSave,
   ],
   [HorizontalLayoutSimple],
   [

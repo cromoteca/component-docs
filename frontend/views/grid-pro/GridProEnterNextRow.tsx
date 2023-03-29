@@ -1,16 +1,12 @@
 import { GridPro } from "@hilla/react-components/GridPro.js";
 import { GridProEditColumn } from "@hilla/react-components/GridProEditColumn.js";
-import people from "./people.json";
-import peopleImages from "./peopleImages.json";
+import { usePeople } from "./People.js";
 
 export default function GridProEnterNextRow() {
-  const items = people.map((person, index) => ({
-    ...person,
-    pictureUrl: peopleImages[index % peopleImages.length],
-  }));
+  const people = usePeople();
 
   return (
-    <GridPro items={items} enterNextRow>
+    <GridPro items={people} enterNextRow>
       <GridProEditColumn path="firstName" />
       <GridProEditColumn path="lastName" />
       <GridProEditColumn path="email" />
