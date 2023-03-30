@@ -7,6 +7,7 @@ import {
   NonIndexRouteObject,
   useMatches,
 } from "react-router-dom";
+import AccordionSimple from "./views/accordion/AccordionSimple.js";
 import AppLayoutSimple from "./views/app-layout/AppLayoutSimple.js";
 import ButtonDisabled from "./views/button/ButtonDisabled.js";
 import ButtonSimple from "./views/button/ButtonSimple.js";
@@ -24,7 +25,14 @@ import ComboBoxCustomValue from "./views/combo-box/ComboBoxCustomValue.js";
 import ComboBoxSimple from "./views/combo-box/ComboBoxSimple.js";
 import ConfirmDialogSimple from "./views/confirm-dialog/ConfirmDialogSimple.js";
 import CrudColumns from "./views/crud/CrudColumns.js";
+import CrudEditorAside from "./views/crud/CrudEditorAside.js";
+import CrudEditorBottom from "./views/crud/CrudEditorBottom.js";
+import CrudEditorContent from "./views/crud/CrudEditorContent.js";
+import CrudGridReplacement from "./views/crud/CrudGridReplacement.js";
+import CrudOpenEditor from "./views/crud/CrudOpenEditor.js";
 import CrudSimple from "./views/crud/CrudSimple.js";
+import CrudToolbarCustom from "./views/crud/CrudToolbarCustom.js";
+import CrudToolbarHidden from "./views/crud/CrudToolbarHidden.js";
 import CustomFieldSimple from "./views/custom-field/CustomFieldSimple.js";
 import DatePickerNoAutoOpen from "./views/date-picker/DatePickerNoAutoOpen.js";
 import DatePickerRange from "./views/date-picker/DatePickerRange.js";
@@ -130,6 +138,7 @@ export type ViewRouteMatch = Readonly<Override<RouteMatch, ViewMeta>>;
 export const useViewMatches = useMatches as () => readonly ViewRouteMatch[];
 
 const examples = [
+  [AccordionSimple],
   [AppLayoutSimple],
   [ButtonSimple, ButtonStyles, ButtonDisabled],
   [ChartSimple, ChartColumn, ChartArea, ChartPie, ChartPolar],
@@ -140,7 +149,17 @@ const examples = [
     CheckboxIndeterminate,
   ],
   [ComboBoxSimple, ComboBoxCustomValue],
-  [CrudSimple, CrudColumns],
+  [
+    CrudSimple,
+    CrudColumns,
+    CrudOpenEditor,
+    CrudEditorAside,
+    CrudEditorBottom,
+    CrudEditorContent,
+    CrudGridReplacement,
+    CrudToolbarCustom,
+    CrudToolbarHidden,
+  ],
   [ConfirmDialogSimple],
   [CustomFieldSimple],
   [DatePickerSimple, DatePickerNoAutoOpen, DatePickerRange],
