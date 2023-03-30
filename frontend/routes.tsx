@@ -24,6 +24,9 @@ import CheckboxSimple from "./views/checkbox/CheckboxSimple.js";
 import ComboBoxCustomValue from "./views/combo-box/ComboBoxCustomValue.js";
 import ComboBoxSimple from "./views/combo-box/ComboBoxSimple.js";
 import ConfirmDialogSimple from "./views/confirm-dialog/ConfirmDialogSimple.js";
+import ContextMenuSimple from "./views/context-menu/ContextMenuSimple.js";
+import CookieConsentLocalization from "./views/cookie-consent/CookieConsentLocalization.js";
+import CookieConsentSimple from "./views/cookie-consent/CookieConsentSimple.js";
 import CrudColumns from "./views/crud/CrudColumns.js";
 import CrudEditorAside from "./views/crud/CrudEditorAside.js";
 import CrudEditorBottom from "./views/crud/CrudEditorBottom.js";
@@ -151,6 +154,8 @@ const examples = [
     CheckboxIndeterminate,
   ],
   [ComboBoxSimple, ComboBoxCustomValue],
+  [ContextMenuSimple],
+  [CookieConsentSimple, CookieConsentLocalization],
   [
     CrudSimple,
     CrudColumns,

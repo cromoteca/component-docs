@@ -24,7 +24,6 @@ export default function GridProPreventSave() {
     },
     preventDefault,
   }: GridProItemPropertyChangedEvent<Person>) => {
-    console.log(path);
     switch (path) {
       case "address.phone":
         if (!/^[0-9-]+$/.test(phone)) {
