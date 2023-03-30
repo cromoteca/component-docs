@@ -23,6 +23,8 @@ import CheckboxSimple from "./views/checkbox/CheckboxSimple.js";
 import ComboBoxCustomValue from "./views/combo-box/ComboBoxCustomValue.js";
 import ComboBoxSimple from "./views/combo-box/ComboBoxSimple.js";
 import ConfirmDialogSimple from "./views/confirm-dialog/ConfirmDialogSimple.js";
+import CrudColumns from "./views/crud/CrudColumns.js";
+import CrudSimple from "./views/crud/CrudSimple.js";
 import CustomFieldSimple from "./views/custom-field/CustomFieldSimple.js";
 import DatePickerNoAutoOpen from "./views/date-picker/DatePickerNoAutoOpen.js";
 import DatePickerRange from "./views/date-picker/DatePickerRange.js";
@@ -138,6 +140,7 @@ const examples = [
     CheckboxIndeterminate,
   ],
   [ComboBoxSimple, ComboBoxCustomValue],
+  [CrudSimple, CrudColumns],
   [ConfirmDialogSimple],
   [CustomFieldSimple],
   [DatePickerSimple, DatePickerNoAutoOpen, DatePickerRange],

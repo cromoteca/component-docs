@@ -4,7 +4,7 @@ import {
 } from "@hilla/react-components/GridPro.js";
 import { GridProEditColumn } from "@hilla/react-components/GridProEditColumn.js";
 import { Notification } from "@hilla/react-components/Notification.js";
-import { Person, usePeople } from "./People.js";
+import { Person, usePeople } from "../People.js";
 
 export default function GridProPreventSave() {
   const people = usePeople();
