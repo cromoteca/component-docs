@@ -78,6 +78,8 @@ import NumberFieldStep from "./views/number-field/NumberFieldStep.js";
 import NumberFieldStepper from "./views/number-field/NumberFieldStepper.js";
 import PasswordFieldReveal from "./views/password-field/PasswordFieldReveal.js";
 import PasswordFieldSimple from "./views/password-field/PasswordFieldSimple.js";
+import ProgressBarIndeterminate from "./views/progress-bar/ProgressBarIndeterminate.js";
+import ProgressBarSimple from "./views/progress-bar/ProgressBarSimple.js";
 import RadioButtonDisabled from "./views/radio-button/RadioButtonDisabled.js";
 import RadioButtonOrientationHorizontal from "./views/radio-button/RadioButtonOrientationHorizontal.js";
 import RadioButtonOrientationVertical from "./views/radio-button/RadioButtonOrientationVertical.js";
@@ -200,6 +202,7 @@ const examples = [
   [NotificationSimple, NotificationThemes],
   [NumberFieldSimple, NumberFieldStepper, NumberFieldStep],
   [PasswordFieldSimple, PasswordFieldReveal],
+  [ProgressBarSimple, ProgressBarIndeterminate],
   [
     RadioButtonSimple,
     RadioButtonReadOnly,
