@@ -79,6 +79,9 @@ import LoginSimple from "./views/login/LoginSimple.js";
 import MenuBarCheckable from "./views/menu-bar/MenuBarCheckable.js";
 import MenuBarOverflow from "./views/menu-bar/MenuBarOverflow.js";
 import MenuBarSimple from "./views/menu-bar/MenuBarSimple.js";
+import MessageInputSimple from "./views/message-input/MessageInputSimple.js";
+import MessageInputWithList from "./views/message-input/MessageInputWithList.js";
+import MessageListSimple from "./views/message-list/MessageListSimple.js";
 import NotificationSimple from "./views/notification/NotificationSimple.js";
 import NotificationThemes from "./views/notification/NotificationThemes.js";
 import NumberFieldSimple from "./views/number-field/NumberFieldSimple.js";
@@ -211,6 +214,8 @@ const examples = [
   [IntegerFieldSimple],
   [ListBoxSimple, ListBoxCustomPresentation],
   [LoginSimple],
+  [MessageInputSimple, MessageInputWithList],
+  [MessageListSimple],
   [MenuBarSimple, MenuBarOverflow, MenuBarCheckable],
   [NotificationSimple, NotificationThemes],
   [NumberFieldSimple, NumberFieldStepper, NumberFieldStep],
