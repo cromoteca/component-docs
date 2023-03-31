@@ -8,13 +8,13 @@ export default function ContextMenuSimple() {
   const people = usePeople().slice(0, 5);
 
   return (
-<ContextMenu items={items}>
-  <Grid items={people} allRowsVisible>
-    <GridColumn path="firstName" />
-    <GridColumn path="lastName" />
-    <GridColumn path="email" />
-    <GridColumn header="Phone number" path="address.phone" />
-  </Grid>
-</ContextMenu>
+    <ContextMenu items={items}>
+      <Grid items={people} allRowsVisible>
+        <GridColumn path="firstName" />
+        <GridColumn path="lastName" />
+        <GridColumn path="email" />
+        <GridColumn header="Phone number" path="address.phone" />
+      </Grid>
+    </ContextMenu>
   );
 }

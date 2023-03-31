@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import AccordionSimple from "./views/accordion/AccordionSimple.js";
 import AppLayoutSimple from "./views/app-layout/AppLayoutSimple.js";
+import AvatarGroupSimple from "./views/avatar/AvatarGroupSimple.js";
+import AvatarSimple from "./views/avatar/AvatarSimple.js";
 import ButtonDisabled from "./views/button/ButtonDisabled.js";
 import ButtonSimple from "./views/button/ButtonSimple.js";
 import ButtonStyles from "./views/button/ButtonStyles.js";
@@ -145,6 +147,7 @@ export const useViewMatches = useMatches as () => readonly ViewRouteMatch[];
 const examples = [
   [AccordionSimple],
   [AppLayoutSimple],
+  [AvatarSimple, AvatarGroupSimple],
   [ButtonSimple, ButtonStyles, ButtonDisabled],
   [ChartSimple, ChartColumn, ChartArea, ChartPie, ChartPolar],
   [
