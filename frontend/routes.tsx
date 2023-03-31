@@ -75,6 +75,7 @@ import InputFieldRequired from "./views/input-fields/InputFieldRequired.js";
 import IntegerFieldSimple from "./views/integer-field/IntegerFieldSimple.js";
 import ListBoxCustomPresentation from "./views/list-box/ListBoxCustomPresentation.js";
 import ListBoxSimple from "./views/list-box/ListBoxSimple.js";
+import LoginSimple from "./views/login/LoginSimple.js";
 import MenuBarCheckable from "./views/menu-bar/MenuBarCheckable.js";
 import MenuBarOverflow from "./views/menu-bar/MenuBarOverflow.js";
 import MenuBarSimple from "./views/menu-bar/MenuBarSimple.js";
@@ -209,6 +210,7 @@ const examples = [
   ],
   [IntegerFieldSimple],
   [ListBoxSimple, ListBoxCustomPresentation],
+  [LoginSimple],
   [MenuBarSimple, MenuBarOverflow, MenuBarCheckable],
   [NotificationSimple, NotificationThemes],
   [NumberFieldSimple, NumberFieldStepper, NumberFieldStep],
