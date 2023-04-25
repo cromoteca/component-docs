@@ -82,6 +82,8 @@ import MenuBarSimple from "./views/menu-bar/MenuBarSimple.js";
 import MessageInputSimple from "./views/message-input/MessageInputSimple.js";
 import MessageInputWithList from "./views/message-input/MessageInputWithList.js";
 import MessageListSimple from "./views/message-list/MessageListSimple.js";
+import MultiSelectComboBoxOnChange from "./views/multi-select-combo-box/MultiSelectComboBoxOnChange.js";
+import MultiSelectComboBoxSimple from "./views/multi-select-combo-box/MultiSelectComboBoxSimple.js";
 import NotificationSimple from "./views/notification/NotificationSimple.js";
 import NotificationThemes from "./views/notification/NotificationThemes.js";
 import NumberFieldSimple from "./views/number-field/NumberFieldSimple.js";
@@ -218,6 +220,7 @@ const examples = [
   [MessageInputSimple, MessageInputWithList],
   [MessageListSimple],
   [MenuBarSimple, MenuBarOverflow, MenuBarCheckable],
+  [MultiSelectComboBoxSimple, MultiSelectComboBoxOnChange],
   [NotificationSimple, NotificationThemes],
   [NumberFieldSimple, NumberFieldStepper, NumberFieldStep],
   [PasswordFieldSimple, PasswordFieldReveal],
