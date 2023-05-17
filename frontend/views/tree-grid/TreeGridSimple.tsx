@@ -15,21 +15,17 @@ export default function TreeGridSimple() {
     async (
       params: GridDataProviderParams<Person>,
       callback: GridDataProviderCallback<Person>
-    ) =>
-      callback(
-        people.filter(
-          (p) => !params.parentItem || p.managerId === params.parentItem.id
-        )
-      ),
+    ) => {
+      const filtered = people.filter(
+        (p) => !params.parentItem || p.managerId === params.parentItem.id
+      );
+      return callback(filtered, filtered.length);
+    },
     []
   );
 
   return (
-    <Grid
-      items={people}
-      itemHasChildrenPath="manager"
-      dataProvider={dataProvider}
-    >
+    <Grid itemHasChildrenPath="manager" dataProvider={dataProvider}>
       <GridTreeColumn path="firstName" />
       <GridColumn path="lastName" />
       <GridColumn path="email" />
