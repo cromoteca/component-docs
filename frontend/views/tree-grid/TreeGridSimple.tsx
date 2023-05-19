@@ -19,7 +19,6 @@ export default function TreeGridSimple() {
         startIndex: params.page * params.pageSize,
         managerId: params.parentItem ? params.parentItem.id : null,
       });
-      console.log(pagedPeople);
       return callback(pagedPeople.people, pagedPeople.hierarchyLevelSize);
     },
     []
