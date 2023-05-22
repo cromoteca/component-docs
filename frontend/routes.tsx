@@ -128,6 +128,7 @@ import TreeGridSimple from "./views/tree-grid/TreeGridSimple.js";
 import UploadSimple from "./views/upload/UploadSimple.js";
 import VerticalLayoutSimple from "./views/vertical-layout/VerticalLayoutSimple.js";
 import VirtualListSimple from "./views/virtual-list/VirtualListSimple.js";
+import TabSheetSimple from "./views/tabs/TabSheetSimple.js";
 
 export type MenuProps = Readonly<{
   icon?: string;
@@ -242,7 +243,7 @@ const examples = [
   [ScrollerSimple],
   [SelectSimple, SelectDividers, SelectDisabledItems, SelectPlaceholder],
   [SplitLayoutSimple, SplitLayoutOrientation],
-  [TabsSimple, TabsStates, TabsOrientation],
+  [TabsSimple, TabSheetSimple, TabsStates, TabsOrientation],
   [TextAreaSimple],
   [
     TextFieldSimple,
