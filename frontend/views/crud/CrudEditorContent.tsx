@@ -1,5 +1,5 @@
 import { ComboBox } from "@hilla/react-components/ComboBox.js";
-import { Crud } from "@hilla/react-components/Crud.js";
+import { Crud, crudPath } from "@hilla/react-components/Crud.js";
 import { EmailField } from "@hilla/react-components/EmailField.js";
 import { FormLayout } from "@hilla/react-components/FormLayout.js";
 import { TextField } from "@hilla/react-components/TextField.js";
@@ -28,16 +28,17 @@ export default function CrudEditorContent() {
         style={{ maxWidth: "480px" }}
         responsiveSteps={responsiveSteps}
       >
-        <TextField label="First name" path="firstName" required />
-        <TextField label="Last name" path="lastName" required />
+        <TextField label="First name" {...crudPath("firstName")} required />
+        <TextField label="Last name" {...crudPath("lastName")} required />
+        {/*// @ts-ignore https://github.com/vaadin/react-components/issues/70 */}
         <EmailField colspan="2" label="Email" path="email" required />
-        <ComboBox
-          colspan="2"
-          label="Profession"
-          path="profession"
-          items={professions}
-          required
-        />
+        {/*// @ts-ignore https://github.com/vaadin/react-components/issues/70 */ /* prettier-ignore */}
+        <ComboBox colspan="2"
+        label="Profession"
+        path="profession"
+        items={professions}
+        required
+      />
       </FormLayout>
     </Crud>
   );

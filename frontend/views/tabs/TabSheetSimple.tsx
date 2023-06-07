@@ -11,8 +11,11 @@ export default function TabSheetSimple() {
         <Tab id="shipping-tab">Shipping</Tab>
       </Tabs>
 
+      {/*// @ts-ignore https://github.com/vaadin/react-components/issues/93 */}
       <div tab="dashboard-tab">This is the Dashboard tab content</div>
+      {/*// @ts-ignore https://github.com/vaadin/react-components/issues/93 */}
       <div tab="payment-tab">This is the Payment tab content</div>
+      {/*// @ts-ignore https://github.com/vaadin/react-components/issues/93 */}
       <div tab="shipping-tab">This is the Shipping tab content</div>
     </TabSheet>
   );

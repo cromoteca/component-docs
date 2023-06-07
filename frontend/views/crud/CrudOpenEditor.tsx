@@ -1,6 +1,7 @@
 import {
   Crud,
   CrudEditedItemChangedEvent,
+  crudPath,
 } from "@hilla/react-components/Crud.js";
 import { Grid } from "@hilla/react-components/Grid.js";
 import { GridColumn } from "@hilla/react-components/GridColumn.js";
@@ -34,10 +35,13 @@ export default function CrudOpenEditor() {
       onEditedItemChanged={onEditedItemChanged}
     >
       <Grid slot="grid" onDoubleClick={onDoubleClick}>
-        <GridColumn path="firstName" header="First name"></GridColumn>
-        <GridColumn path="lastName" header="Last name"></GridColumn>
-        <GridColumn path="email" header="Email"></GridColumn>
-        <GridColumn path="profession" header="Profession"></GridColumn>
+        <GridColumn {...crudPath("firstName")} header="First name"></GridColumn>
+        <GridColumn {...crudPath("lastName")} header="Last name"></GridColumn>
+        <GridColumn {...crudPath("email")} header="Email"></GridColumn>
+        <GridColumn
+          {...crudPath("profession")}
+          header="Profession"
+        ></GridColumn>
       </Grid>
     </Crud>
   );

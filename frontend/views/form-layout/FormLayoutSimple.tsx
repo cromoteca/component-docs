@@ -14,6 +14,7 @@ export default function FormLayoutSimple() {
     >
       <TextField label="First name"></TextField>
       <TextField label="Last name"></TextField>
+      {/*// @ts-ignore https://github.com/vaadin/react-components/issues/70 */}
       <TextField label="Username" colspan="2"></TextField>
       <PasswordField label="Password"></PasswordField>
       <PasswordField label="Confirm password"></PasswordField>
